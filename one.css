@@ -1,0 +1,28 @@
+#calculator-screen {
+	height: 420px;
+	width: 220px;
+	border: 2px solid rgb(194, 193, 193);
+	border-radius: 13px;
+	background-color: bisque;
+}
+#buttonn {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: center;
+	text-shadow: 10px;
+
+}
+button {
+	padding: 10px;
+	margin: 11px;
+	background-color:honeydew ;
+}
+input {
+	font-size: 15px;
+	margin: 10px;
+	background-color: rgb(218, 220, 219);
+}
+#butequal {
+	background-color:rgb(73, 231, 16) ;
+}
