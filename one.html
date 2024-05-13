@@ -1,25 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="one.css">
-	<title>Document</title>
-	<script src="https://kit.fontawesome.com/76d2ded0a6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="one.css">
+  <title>Document</title>
 </head>
 <body>
-	<header>
-		<div id="amzn_head">
- <img src="Amazon1.webp" alt="">
- <p><i class="fa-solid fa-location-dot"></i></p>
+  <div id="calculator-screen">
+    <input type="text" id="number" readonly>
+  <div id="buttonn">
+    <button class="calculator-button" onclick="numericValue = '';
+    document.querySelector('#number').value = numericValue;">c</button>
 
-</div>
-	</header>
-	<main>
+    <button class="calculator-button" onclick="numericValue = numericValue + '1';
+    document.querySelector('#number').value = numericValue;">1</button>
 
-	</main>
-	<footer>
+    <button class="calculator-button" onclick=" numericValue = numericValue + '2';
+    document.querySelector('#number').value = numericValue;">2</button>
 
-	</footer>
+    <button class="calculator-button" onclick="numericValue = numericValue + '+';
+    document.querySelector('#number').value = numericValue;">+</button>
+
+    <button class="calculator-button" onclick=" numericValue = numericValue + '3';
+    document.querySelector('#number').value = numericValue;">3</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '4';
+    document.querySelector('#number').value = numericValue;">4</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '-';
+    document.querySelector('#number').value = numericValue;">-</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '5';
+    document.querySelector('#number').value = numericValue;">5</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '6';
+    document.querySelector('#number').value = numericValue;">6</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '*';
+    document.querySelector('#number').value = numericValue;">*</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '7';
+    document.querySelector('#number').value = numericValue;">7</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '8';
+    document.querySelector('#number').value = numericValue;">8</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '/';
+    document.querySelector('#number').value = numericValue;">/</button>
+
+    <button class="calculator-button" id="butequal" onclick="
+    numericValue = eval(numericValue);
+    document.querySelector('#number').value = numericValue;">=</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '9';
+    document.querySelector('#number').value = numericValue;">9</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '0';
+    document.querySelector('#number').value = numericValue;">0</button>
+
+    <button class="calculator-button" onclick="numericValue = numericValue + '.';
+    document.querySelector('#number').value = numericValue;">.</button>
+
+  </div>
+  </div>
+  <script>
+    let numericValue = '';
+    document.querySelector('#number').value = numericValue;
+  </script>
 </body>
 </html>
