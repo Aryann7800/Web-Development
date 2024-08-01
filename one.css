@@ -1,9 +1,13 @@
+
 #calculator-screen {
 	height: 420px;
 	width: 220px;
-	border: 2px solid rgb(194, 193, 193);
+	border: 2px solid rgb(248, 53, 53);
 	border-radius: 13px;
-	background-color: bisque;
+	background-color: black;
+	position: relative;
+	top: 40px;
+	left: 400px;
 }
 #buttonn {
 	display: flex;
@@ -16,7 +20,9 @@
 button {
 	padding: 10px;
 	margin: 11px;
-	background-color:honeydew ;
+	border: #0081f8, solid, 3px;
+	border-radius: 20px;
+	background-color: #f4ff05 ;
 }
 input {
 	font-size: 15px;
@@ -25,4 +31,8 @@ input {
 }
 #butequal {
 	background-color:rgb(73, 231, 16) ;
+}
+body {
+
+ background-color: #607D8B;
 }
